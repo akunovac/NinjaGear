@@ -26,7 +26,7 @@
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" Nullable="false" />
-          <Property Name="Gold" Type="String" Nullable="false" />
+          <Property Name="Gold" Type="Int32" Nullable="false" />
           <Property Name="Gear" Type="String" Nullable="false" />
           <NavigationProperty Name="Equipment" Relationship="NinjaModel.EquipmentNinja" FromRole="Ninja" ToRole="Equipment" />
         </EntityType>
@@ -41,10 +41,10 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Value" Type="String" Nullable="false" />
-          <Property Name="Strength" Type="String" Nullable="false" />
-          <Property Name="Intelligence" Type="String" Nullable="false" />
-          <Property Name="Agility" Type="String" Nullable="false" />
+          <Property Name="Value" Type="Int32" Nullable="false" />
+          <Property Name="Strength" Type="Int32" Nullable="false" />
+          <Property Name="Intelligence" Type="Int32" Nullable="false" />
+          <Property Name="Agility" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Ninjas" Relationship="NinjaModel.EquipmentNinja" FromRole="Equipment" ToRole="Ninja" />
         </EntityType>
         <EntityType Name="Head" BaseType="NinjaModel.Equipment">
