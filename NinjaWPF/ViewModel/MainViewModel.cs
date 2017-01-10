@@ -1,4 +1,5 @@
 using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
 
 namespace NinjaWPF.ViewModel
 {
@@ -19,6 +20,8 @@ namespace NinjaWPF.ViewModel
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
         /// </summary>
+        /// 
+        public RelayCommand OpenStoreWindow { get; set; }
         public MainViewModel()
         {
             ////if (IsInDesignMode)
