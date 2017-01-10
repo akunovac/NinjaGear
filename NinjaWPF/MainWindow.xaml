@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NinjaWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <Button x:Name="button" Content="Ninjas" HorizontalAlignment="Left" Height="67" Margin="59,112,0,0" VerticalAlignment="Top" Width="105"/>
-        <Button x:Name="button_Copy" Content="Inventory" HorizontalAlignment="Left" Height="67" Margin="200,112,0,0" VerticalAlignment="Top" Width="105"/>
-        <Button x:Name="button_Copy1" Content="Gearstore" HorizontalAlignment="Left" Height="67" Margin="339,112,0,0" VerticalAlignment="Top" Width="105" Command="{Binding w = GearStore.xaml}"/>
+        Title="MainWindow" Height="350" Width="525" DataContext="{Binding Main, Source={StaticResource Locator}}">
+<Grid>
+    <Button x:Name="button" Content="Ninjas" HorizontalAlignment="Left" Height="67" Margin="59,112,0,0" VerticalAlignment="Top" Width="105"/>
+    <Button x:Name="button_Copy" Content="Inventory" HorizontalAlignment="Left" Height="67" Margin="200,112,0,0" VerticalAlignment="Top" Width="105"/>
+    <Button x:Name="button_Copy1" Content="Gearstore" HorizontalAlignment="Left" Height="67" Margin="339,112,0,0" VerticalAlignment="Top" Width="105" Command="{Binding OpenStoreWindow}"/>
 
-    </Grid>
+</Grid>
 </Window>

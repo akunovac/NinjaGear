@@ -24,6 +24,7 @@ namespace NinjaWPF.ViewModel
         public RelayCommand OpenStoreWindow { get; set; }
         public MainViewModel()
         {
+            OpenStoreWindow = new RelayCommand(_openStoreWindow);  
             ////if (IsInDesignMode)
             ////{
             ////    // Code runs in Blend --> create design time data.
@@ -33,5 +34,12 @@ namespace NinjaWPF.ViewModel
             ////    // Code runs "for real"
             ////}
         }
+
+        public void _openStoreWindow()
+        {
+            View.GearStore Store = new View.GearStore();
+            Store.Show();
+        }
+        
     }
 }

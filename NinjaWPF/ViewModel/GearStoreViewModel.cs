@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace NinjaWPF.ViewModel
 {
-    class GearStoreViewModel
+    public  class GearStoreViewModel
     {
+        public GearStoreViewModel
+        {
+            helloWorld();
+        }
+
+
+        private void helloWorld()
+        {
+            Console.WriteLine("Allemaal kanker homos");
+        }
     }
 }

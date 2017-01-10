@@ -43,6 +43,7 @@ namespace NinjaWPF.ViewModel
             ////}
 
             SimpleIoc.Default.Register<MainViewModel>();
+            SimpleIoc.Default.Register<GearStoreViewModel>();
         }
 
         public MainViewModel Main
@@ -52,6 +53,16 @@ namespace NinjaWPF.ViewModel
                 return ServiceLocator.Current.GetInstance<MainViewModel>();
             }
         }
+
+        public GearStoreViewModel GearStore
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<GearStoreViewModel>();
+            }
+
+        }
+
         
         public static void Cleanup()
         {
