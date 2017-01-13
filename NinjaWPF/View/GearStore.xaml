@@ -8,5 +8,33 @@
         Title="GearStore" Height="500" Width="500" DataContext="{Binding GearStore, Source={StaticResource Locator}}">
     <Grid>
         <Label x:Name="label" Content="GearStore" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="43" Width="103" RenderTransformOrigin="0.18,-0.331"/>
+        <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="284" Margin="10,58,0,0" VerticalAlignment="Top" Width="459">
+            <TabItem Header="Head">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="90*"/>
+                        <ColumnDefinition Width="359*"/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Shoulders">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Legs">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Belt">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Boots">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Chest">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+
+
+
+        </TabControl>
     </Grid>
 </Window>
