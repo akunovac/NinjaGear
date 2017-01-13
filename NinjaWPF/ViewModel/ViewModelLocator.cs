@@ -44,6 +44,8 @@ namespace NinjaWPF.ViewModel
 
             SimpleIoc.Default.Register<MainViewModel>();
             SimpleIoc.Default.Register<GearStoreViewModel>();
+            SimpleIoc.Default.Register<InventoryViewModel>();
+            SimpleIoc.Default.Register<NinjasViewModel>();
         }
 
         public MainViewModel Main
@@ -62,6 +64,23 @@ namespace NinjaWPF.ViewModel
             }
 
         }
+
+        public InventoryViewModel Inventory
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<InventoryViewModel>();
+            }
+        }
+        
+        public NinjasViewModel Ninja
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<NinjasViewModel>();
+            }
+        }
+
 
         
         public static void Cleanup()
