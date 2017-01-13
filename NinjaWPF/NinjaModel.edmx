@@ -31,10 +31,8 @@
           <NavigationProperty Name="Equipment" Relationship="NinjaModel.EquipmentNinja" FromRole="Ninja" ToRole="Equipment" />
         </EntityType>
         <EntityType Name="Chest" BaseType="NinjaModel.Equipment">
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="Legs" BaseType="NinjaModel.Equipment">
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="Equipment" Abstract="true">
           <Key>
@@ -48,19 +46,15 @@
           <NavigationProperty Name="Ninjas" Relationship="NinjaModel.EquipmentNinja" FromRole="Equipment" ToRole="Ninja" />
         </EntityType>
         <EntityType Name="Head" BaseType="NinjaModel.Equipment">
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="Shoulders" BaseType="NinjaModel.Equipment">
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="Belt" BaseType="NinjaModel.Equipment">
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="Boots" BaseType="NinjaModel.Equipment">
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <Association Name="EquipmentNinja">
-          <End Type="NinjaModel.Equipment" Role="Equipment" Multiplicity="*" />
+          <End Type="NinjaModel.Equipment" Role="Equipment" Multiplicity="1" />
           <End Type="NinjaModel.Ninja" Role="Ninja" Multiplicity="1" />
           <ReferentialConstraint>
             <Principal Role="Ninja">

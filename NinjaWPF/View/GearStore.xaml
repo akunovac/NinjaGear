@@ -5,9 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NinjaWPF.View"
         mc:Ignorable="d"
-        Title="GearStore" Height="300" Width="300" DataContext="{Binding GearStore, Source={StaticResource Locator}}">
+        Title="GearStore" Height="500" Width="500" DataContext="{Binding GearStore, Source={StaticResource Locator}}">
     <Grid>
-        <Calendar HorizontalAlignment="Left" Margin="33,28,0,0" VerticalAlignment="Top"/>
-
+        <Label x:Name="label" Content="GearStore" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="43" Width="103" RenderTransformOrigin="0.18,-0.331"/>
     </Grid>
 </Window>
