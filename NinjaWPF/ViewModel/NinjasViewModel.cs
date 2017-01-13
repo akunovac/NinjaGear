@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace NinjaWPF.ViewModel
 {
-    public  class GearStoreViewModel
+    class NinjasViewModel
     {
-        
     }
 }
