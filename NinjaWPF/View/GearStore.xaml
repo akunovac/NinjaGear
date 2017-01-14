@@ -11,26 +11,85 @@
         <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="284" Margin="10,58,0,0" VerticalAlignment="Top" Width="459">
             <TabItem Header="Head">
                 <Grid Background="#FFE5E5E5">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="90*"/>
-                        <ColumnDefinition Width="359*"/>
-                    </Grid.ColumnDefinitions>
+                    <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="252" Width="449">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Name"/>
+                            <DataGridTextColumn Header="Value"/>
+                            <DataGridTextColumn Header="Strength"/>
+                            <DataGridTextColumn Header="Intelligence"/>
+                            <DataGridTextColumn Header="Agility"/>
+                            
+                        </DataGrid.Columns>
+                    </DataGrid>
                 </Grid>
             </TabItem>
             <TabItem Header="Shoulders">
-                <Grid Background="#FFE5E5E5"/>
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid x:Name="dataGrid1" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-1.278,-0.333" Height="252" Width="449">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Name"/>
+                            <DataGridTextColumn Header="Value"/>
+                            <DataGridTextColumn Header="Strength"/>
+                            <DataGridTextColumn Header="Intelligence"/>
+                            <DataGridTextColumn Header="Agility"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
             </TabItem>
             <TabItem Header="Legs">
-                <Grid Background="#FFE5E5E5"/>
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid x:Name="dataGrid2" HorizontalAlignment="Left" VerticalAlignment="Top" Height="252" Width="449">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Name"/>
+                            <DataGridTextColumn Header="Value"/>
+                            <DataGridTextColumn Header="Strength"/>
+                            <DataGridTextColumn Header="Intelligence"/>
+                            <DataGridTextColumn Header="Agility"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
             </TabItem>
             <TabItem Header="Belt">
-                <Grid Background="#FFE5E5E5"/>
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid x:Name="dataGrid3" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-1.472,-1.231" Height="252" Width="449">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Name"/>
+                            <DataGridTextColumn Header="Value"/>
+                            <DataGridTextColumn Header="Strength"/>
+                            <DataGridTextColumn Header="Intelligence"/>
+                            <DataGridTextColumn Header="Agility"/>
+
+                        </DataGrid.Columns>
+                    </DataGrid>
+
+                </Grid>
             </TabItem>
             <TabItem Header="Boots">
-                <Grid Background="#FFE5E5E5"/>
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid x:Name="dataGrid4" HorizontalAlignment="Left" VerticalAlignment="Top" Height="252" Width="449">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Name"/>
+                            <DataGridTextColumn Header="Value"/>
+                            <DataGridTextColumn Header="Strength"/>
+                            <DataGridTextColumn Header="Intelligence"/>
+                            <DataGridTextColumn Header="Agility"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
             </TabItem>
             <TabItem Header="Chest">
-                <Grid Background="#FFE5E5E5"/>
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid x:Name="dataGrid5" HorizontalAlignment="Left" VerticalAlignment="Top" Height="252" Width="449">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Name"/>
+                            <DataGridTextColumn Header="Value"/>
+                            <DataGridTextColumn Header="Strength"/>
+                            <DataGridTextColumn Header="Intelligence"/>
+                            <DataGridTextColumn Header="Agility"/>
+
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
             </TabItem>
 
 
