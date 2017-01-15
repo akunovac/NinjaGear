@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NinjaWPF.ViewModel
 {
-    class InventoryViewModel
+    public class InventoryViewModel
     {
     }
 }

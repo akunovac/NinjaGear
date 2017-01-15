@@ -68,11 +68,11 @@ namespace NinjaWPF.ViewModel
         public InventoryViewModel Inventory
         {
             get
-            {
+            { 
                 return ServiceLocator.Current.GetInstance<InventoryViewModel>();
             }
         }
-        
+
         public NinjasViewModel Ninja
         {
             get
